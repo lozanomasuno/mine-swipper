@@ -1,0 +1,49 @@
+.grid .easy-level {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+.grid .medium-level {
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+}
+.grid .hard-level {
+  width: 300px;
+  height: 300px;
+  background-color: lightcoral;
+}
+
+body {
+  background-color: #eee;
+  color: #444;
+  height: 100vh;
+  font-size: "roboto, sans-serif";
+}
+
+.container {
+  overflow: calc(100% - 100px);
+}
+.container div button {
+  background-size: 5px 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.options-bar {
+  width: 100%;
+  height: auto;
+}
+
+.options-bar button {
+  height: 54px;
+}
+
+.grid button {
+  width: 50px;
+  height: 50px;
+  margin: 0.1%;
+}
+.grid button:hover {
+  background-color: #444;
+}/*# sourceMappingURL=style.css.map */

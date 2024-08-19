@@ -1,0 +1,65 @@
+$small-size: 100px;
+$medium-size: 200px;
+$large-size: 300px;
+
+@mixin resize-div($size) {
+    width: $size;
+    height: $size;
+}
+
+.grid {
+    .easy-level {
+        @include resize-div($small-size);
+        background-color: lightblue;
+      }
+    
+      .medium-level {
+        @include resize-div($medium-size);
+        background-color: lightgreen;
+      }
+    
+      .hard-level{
+        @include resize-div($large-size);
+        background-color: lightcoral;
+      }
+}
+
+body{
+    background-color: #eee;
+    color: #444;
+    height: 100vh;
+    font-size: "roboto, sans-serif";
+}
+
+.container{
+    overflow:calc(100% - 100px);
+    div{
+        button{
+            background-size: 5px 5px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}
+.options-bar{
+    width: 100%;
+    height: auto;
+}
+
+.options-bar button{
+    height: 54px;
+}
+
+.grid {
+
+    button{
+        width: 50px;
+        height: 50px;
+        margin: .1%;
+    
+        &:hover{
+            background-color: #444;
+        }
+    }
+}
+
